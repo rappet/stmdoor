@@ -7,7 +7,7 @@
   (title_block
     (title "STM32 RS485 iButton Reader")
     (date "2023-06-05")
-    (rev "1")
+    (rev "1.1")
     (company "Chaosdorf - rappet")
   )
 
@@ -3024,10 +3024,13 @@
     (uuid b5eb9b5c-4a2d-430b-aee1-1d37a1bce52b)
     (property "Reference" "SW1" (id 0) (at 71.755 90.17 0))
     (property "Value" "SW_Push" (id 1) (at 71.755 92.71 0))
-    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm" (id 2) (at 71.755 93.345 0)
+    (property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" (id 2) (at 71.755 93.345 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 71.755 93.345 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C318884" (id 4) (at 71.755 98.425 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c1c63c42-2a8b-472c-89a5-a44ba07719b5))
@@ -3508,7 +3511,7 @@
       (reference "RN1") (unit 1) (value "4x1k") (footprint "Resistor_SMD:R_Array_Convex_4x0603")
     )
     (path "/b5eb9b5c-4a2d-430b-aee1-1d37a1bce52b"
-      (reference "SW1") (unit 1) (value "SW_Push") (footprint "Button_Switch_THT:SW_PUSH_6mm_H5mm")
+      (reference "SW1") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm")
     )
     (path "/a467003a-eee6-48f0-9753-852540b9d516"
       (reference "U1") (unit 1) (value "AMS1117-3.3") (footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
