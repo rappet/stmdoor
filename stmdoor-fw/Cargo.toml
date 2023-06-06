@@ -1,0 +1,24 @@
+[package]
+name = "stmdoor-fw"
+version = "0.1.0"
+edition = "2021"
+authors = [ "Raphael Peters <rappet@rappet.de>" ]
+license = "MIT"
+repository = "https://github.com/rappet/stmdoor"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = { version = "0.7", features = ["critical-section-single-core"] }
+cortex-m-rt = "0.7"
+embedded-alloc = "0.5.0"
+embedded-hal = "0.2"
+nb = "1"
+onewire = "0.3.13"
+panic-halt = "0.2.0"
+stm32f0xx-hal = { version = "0.18", features = ["stm32f030x8"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 'z'
